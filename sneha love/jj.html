@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneha ❤️ From Anowar With All My Love</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+  <style>
+    @import url('https://fonts.googleapis.com');
+    
+    body { font-family: 'Playfair Display', serif; scroll-behavior: smooth; }
+    .love-font { font-family: 'Dancing Script', cursive; }
+    
+    /* PURE BLACK THEME */
+    .hero-bg {
+      background: #000000;
+    }
+    
+    .heart {
+      position: absolute;
+      font-size: 30px;
+      color: #ff4d94;
+      animation: floatHeart 8s linear infinite;
+      opacity: 0.8;
+      z-index: 0;
+    }
+    
+    @keyframes floatHeart {
+      0% { transform: translateY(100vh) rotate(0deg); }
+      100% { transform: translateY(-100vh) rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+
+  <!-- Floating Hearts Background -->
+  <div id="hearts" class="fixed inset-0 pointer-events-none"></div>
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 py-5">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <span class="text-4xl">❤️</span>
+        <span class="text-3xl love-font text-pink-300">Anowar & Sneha</span>
+      </div>
+      <button onclick="toggleMusic()" id="music-btn"
+              class="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-6 py-3 rounded-full transition active:scale-95">
+        <i class="fas fa-music"></i>
+        <span id="music-text" class="font-medium">Play Our Song</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION (Full Black) -->
+  <section class="hero-bg min-h-screen flex items-center justify-center relative">
+    <div class="max-w-4xl mx-auto text-center px-6 z-10">
+      <p class="text-pink-300 text-2xl tracking-widest mb-4">For my Sneha...</p>
+      <h1 class="text-8xl md:text-[140px] leading-none font-bold love-font text-white mb-8">
+        I LOVE YOU
+      </h1>
+      <p class="text-5xl md:text-7xl love-font text-pink-200">Sneha ❤️</p>
+      
+      <div class="mt-20">
+        <!-- Starts music + scrolls to letter -->
+        <button onclick="startExperience()" 
+                class="bg-white text-black px-16 py-7 rounded-full text-3xl font-bold hover:scale-110 transition shadow-[0_0_30px_rgba(255,255,255,0.3)]">
+          Click here to read my heart →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LETTER SECTION (Updated Scroll Target) -->
+  <section id="love-letter" class="py-28 bg-zinc-900/50">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="bg-zinc-800/40 border border-pink-500/30 rounded-3xl p-12 md:p-20">
+        <p class="text-3xl leading-relaxed text-pink-100">
+          My dearest Sneha,<br><br>
+          From the first moment I saw your smile, my world changed forever. 
+          I never knew one person could make my heart feel so full every single day.<br><br>
+          I love the way you laugh at my silly jokes, 
+          the way your eyes sparkle when you talk about the things you love, 
+          and how you make even the simplest moments feel like magic.<br><br>
+          You are my peace, my happiness, my everything. 
+          I want to spend every tomorrow making you feel as loved as you deserve.<br><br>
+          So today, with all the love in my heart, 
+          I want to ask you something very important...
+        </p>
+        <div class="mt-16 text-center">
+          <div class="inline-block bg-pink-500 text-white text-4xl px-12 py-6 rounded-3xl love-font animate-bounce">
+            Will you be mine forever?
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REASONS SECTION -->
+  <section class="py-24 bg-black">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-6xl text-center love-font text-pink-300 mb-16">10 Reasons I Love You, Sneha</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-xl">
+        <div class="bg-zinc-900/40 p-8 rounded-3xl border border-pink-400/20 hover:border-pink-500 transition">1. Your smile can light up the darkest days</div>
+        <div class="bg-zinc-900/40 p-8 rounded-3xl border border-pink-400/20 hover:border-pink-500 transition">2. The way you say my name makes my heart skip</div>
+        <div class="bg-zinc-900/40 p-8 rounded-3xl border border-pink-400/20 hover:border-pink-500 transition">3. You make me want to be a better person every day</div>
+        <div class="bg-zinc-900/40 p-8 rounded-3xl border border-pink-400/20 hover:border-pink-500 transition">4. Your hugs feel like home</div>
+        <div class="bg-zinc-900/40 p-8 rounded-3xl border border-pink-400/20 hover:border-pink-500 transition">5. I love how you care about the little things</div>
+        <div class="bg-zinc-900/40 p-8 rounded-3xl border border-pink-400/20 hover:border-pink-500 transition">6. Your voice is my favourite sound in the world</div>
+        <div class="bg-zinc-900/40 p-8 rounded-3xl border border-pink-400/20 hover:border-pink-500 transition">7. You make ordinary moments feel extraordinary</div>
+        <div class="bg-zinc-900/40 p-8 rounded-3xl border border-pink-400/20 hover:border-pink-500 transition">8. I never get tired of talking to you for hours</div>
+        <div class="bg-zinc-900/40 p-8 rounded-3xl border border-pink-400/20 hover:border-pink-500 transition">9. You understand me like no one else</div>
+        <div class="bg-zinc-900/40 p-8 rounded-3xl border border-pink-400/20 hover:border-pink-500 transition">10. Because you are YOU — and that's more than enough ❤️</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPOSAL SECTION -->
+  <section id="proposal" class="py-32 bg-black text-center">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-7xl love-font text-pink-300 mb-8">My Sweet Sneha...</h2>
+      <button onclick="propose()" 
+              class="bg-pink-500 hover:bg-pink-600 text-white text-5xl font-bold px-20 py-10 rounded-3xl transition shadow-[0_0_50px_rgba(236,72,153,0.4)] active:scale-95">
+        SNEHA, WILL YOU BE MY GIRLFRIEND? ❤️
+      </button>
+      <p class="mt-20 text-2xl text-pink-200">I promise to love you every single day, forever.</p>
+      <p class="text-xl mt-6 text-pink-300">— Anowar ❤️</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-16 text-center border-t border-pink-900/30">
+    <div class="text-6xl mb-4">❤️❤️❤️</div>
+    <p class="text-2xl love-font">Made with all the love in my heart for you, Sneha</p>
+  </footer>
+
+  <!-- LOCAL MUSIC -->
+  <audio id="love-song" loop>
+    <source src="wannabeyours.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- MODAL -->
+  <div id="modal" class="hidden fixed inset-0 bg-black/95 flex items-center justify-center z-50">
+    <div class="text-center px-6">
+      <div class="text-[120px] mb-8">💖</div>
+      <h1 class="text-7xl love-font text-pink-400 mb-6">SHE SAID YES!!! 🎉</h1>
+      <button onclick="closeModal()" class="bg-white text-black px-12 py-6 rounded-full text-3xl font-bold">Close ❤️</button>
+    </div>
+  </div>
+
+  <script>
+    function createHearts() {
+      const container = document.getElementById('hearts');
+      for (let i = 0; i < 25; i++) {
+        setTimeout(() => {
+          const heart = document.createElement('div');
+          heart.className = 'heart';
+          heart.textContent = '❤️';
+          heart.style.left = Math.random() * 100 + 'vw';
+          heart.style.animationDuration = (Math.random() * 5 + 7) + 's';
+          container.appendChild(heart);
+        }, i * 400);
+      }
+    }
+    createHearts();
+
+    function startExperience() {
+      const song = document.getElementById('love-song');
+      song.play().catch(e => console.log("User interaction needed"));
+      document.getElementById('music-text').innerText = "Music Playing";
+      document.getElementById('music-btn').classList.add('bg-pink-500/30');
+      
+      document.getElementById('love-letter').scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    }
+
+    function toggleMusic() {
+      const song = document.getElementById('love-song');
+      if (song.paused) {
+        song.play();
+        document.getElementById('music-text').innerText = "Music Playing";
+      } else {
+        song.pause();
+        document.getElementById('music-text').innerText = "Play Our Song";
+      }
+    }
+
+    function propose() { document.getElementById('modal').classList.remove('hidden'); }
+    function closeModal() { document.getElementById('modal').classList.add('hidden'); }
+  </script>
+</body>
+</html>
